@@ -66,7 +66,7 @@ const Visual = () => {
         <h3 className='mb-10'>Window displays and store interiors at the Regent Street flagship.</h3>
         <div className='grid grid-cols-4 gap-10'>
           <img src={stories3} className='rounded-md col-span-4 w-screen' />
-          <img src={stories2} className='rounded-md sm:col-span-2 xs:col-span-4 h-full'/>
+          <img src={stories2} className='rounded-md sm:col-span-2 xs:col-span-4'/>
           <img src={stories4} className='rounded-md sm:col-span-2 xs:col-span-4'/>
           <img src={stories1} className='rounded-md col-span-4 w-screen' />
         </div>
