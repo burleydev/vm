@@ -1,7 +1,15 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+import react from '@vitejs/plugin-react' // For React support
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(), // Add React plugin
+    tailwindcss(), // TailwindCSS plugin
+  ],
+  server: {
+    hmr: {
+      overlay: false, // Disables error overlay (optional)
+    },
+  },
 })
