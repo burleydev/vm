@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "tailwindcss";
 
-@tailwind utilities;
-@tailwind utilities;
+@theme {
+  --breakpoint-xs: 320px;
+  --color-brown: #bda37d;
+}
 
 
 /* General styles */
@@ -30,36 +33,6 @@ p {
   color: #262626;
 }
 
-.bg-colour {
+/* .bg-colour {
   background-color: #bda37d;
-}
-
-/* Media queries */
-
-@media (min-width: 320px) {
-  .profile img {
-    border-radius: 0;
-  }
-  .description {
-    border-radius: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .profile img {
-    border-radius: 24px 24px 0 0;
-  }
-  .description {
-    border-radius: 0 0 24px 24px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .profile img {
-    border-radius: 24px 0 0 24px;
-  }
-
-  .description {
-    border-radius: 0 24px 24px 0;
-  }
-}
+} */
