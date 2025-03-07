@@ -20,12 +20,12 @@ const About = () => {
                     <div className=''>
                         <div className='grid grid-cols-2 my-10'>
                         <h2 className='font-bold'>Address</h2>
-                        <h2>N16 7TP</h2>
+                        <h2>London, N16 7TP</h2>
                         </div>
  
                         <div className='grid grid-cols-2 my-10'>
                         <h2 className='font-bold'>Phone</h2>
-                        <h2>07599 306711</h2>
+                        <h2>(+44) 7599 306711</h2>
                         </div>
 
                         <div className='grid grid-cols-2 my-10'>

@@ -2,7 +2,7 @@ import '../index.css';
 
 const Home = () => {
   return (
-    <div className='h-screen flex flex-col justify-center items-center bg-gray-300'>
+    <div className='h-screen flex flex-col justify-center items-center bg-colour'>
       
       <div className='text-center'>
         <h1 className='text-8xl font-bold'>PORTFOLIO</h1>
