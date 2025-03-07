@@ -27,7 +27,7 @@ const About = () => {
 
                         <div className='grid grid-cols-2 my-10'>
                             <h2 className='font-bold'>Phone</h2>
-                            <h2 className='xs:text-right sm:text-left'>(+44) 7599 306711</h2>
+                            <h2 className='xs:text-right sm:text-left'>07599 306711</h2>
                         </div>
 
                         <div className='grid grid-cols-4 my-10'>
