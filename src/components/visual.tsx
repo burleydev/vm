@@ -24,7 +24,7 @@ import stories4 from '../images/stories/stories4.jpg'
 
 const Visual = () => {
   return (
-    <div className='lg:m-20 xs:m-5'>
+    <div className='sm:m-20 xs:my-20 xs:mx-5'>
 
       <div className=''>
         <h1 className='sm:text-4xl xs:text-3xl font-bold pb-32'>VISUAL MERCHANDISING PROJECTS</h1>
