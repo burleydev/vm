@@ -35,7 +35,7 @@ const Visual = () => {
         <h3 className='mb-10'>Showroom display at head office showcasing the new A/W 2025 collection.</h3>
         <div className='grid grid-cols-4 gap-10'>
           <img src={ugg4} className='rounded-md col-span-4 w-screen' />
-          <img src={ugg3} className='rounded-md sm:col-span-2 xs:col-span-4 h-full'/>
+          <img src={ugg3} className='rounded-md sm:col-span-2 xs:col-span-4 xs:h-auto sm:h-full'/>
           <img src={ugg1} className='rounded-md sm:col-span-2 xs:col-span-4'/>
         </div>
       </div>
@@ -45,7 +45,7 @@ const Visual = () => {
         <h3 className='mb-10'>Women's and men's collections showcased at the flagship store in Sloane Square.</h3>
         <div className='grid grid-cols-4 gap-10'>
           <img src={club4} className='rounded-md col-span-4 w-screen' />
-          <img src={club1} className='rounded-md sm:col-span-2 xs:col-span-4 h-full'/>
+          <img src={club1} className='rounded-md sm:col-span-2 xs:col-span-4'/>
           <img src={club2} className='rounded-md sm:col-span-2 xs:col-span-4'/>
         </div>
       </div>
@@ -55,7 +55,7 @@ const Visual = () => {
         <h3 className='mb-10'>Window displays and store interiors at the Westfield Stratford store.</h3>
         <div className='grid grid-cols-4 gap-10'>
           <img src={weekday4} className='rounded-md col-span-4 w-screen' />
-          <img src={weekday2} className='rounded-md sm:col-span-2 xs:col-span-4 h-full'/>
+          <img src={weekday2} className='rounded-md sm:col-span-2 xs:col-span-4'/>
           <img src={weekday3} className='rounded-md sm:col-span-2 xs:col-span-4'/>
           <img src={weekday1} className='rounded-md col-span-4 w-screen' />
         </div>
