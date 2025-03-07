@@ -2,13 +2,13 @@ import '../index.css';
 
 // Import images
 import ugg1 from '../images/ugg/ugg1.jpg';
-import ugg2 from '../images/ugg/ugg2.jpg';
+// import ugg2 from '../images/ugg/ugg2.jpg';
 import ugg3 from '../images/ugg/ugg3.jpg';
 import ugg4 from '../images/ugg/ugg4.jpg';
 
 import club1 from '../images/club/club1.jpg';
 import club2 from '../images/club/club2.jpg';
-import club3 from '../images/club/club3.jpg';
+// import club3 from '../images/club/club3.jpg';
 import club4 from '../images/club/club4.jpg';
 
 import weekday1 from '../images/weekday/weekday1.jpg';
