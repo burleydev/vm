@@ -2,16 +2,16 @@ import '../index.css'
 
 const About = () => {
     return (
-        <div className='m-20'>
+        <div className='lg:m-20 sm:m-10'>
             <div className=''>
-                <h1 className='text-3xl font-bold pb-32'>SUMMARY</h1>
+                <h1 className='text-4xl font-bold pb-32'>SUMMARY</h1>
             </div>
 
-            <div className='grid grid-cols-3 gap-18'>
+            <div className='grid gap-18 lg:grid-cols-3 md:grid-cols-1'>
                 <div className='flex flex-col items-left'>
-                    <img src='https://picsum.photos/300/400' className=''></img>
+                    <img src='https://picsum.photos/300/400' className='rounded-md'></img>
                     <h3 className='mt-10 text-xl font-bold'>HI, I'M CARLOS</h3>
-                    <p className='text-justify my-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto obcaecati qui blanditiis ex placeat dolor! Vitae est veniam, iste mollitia sequi facilis, deserunt dignissimos impedit odio nostrum obcaecati. Sit, voluptates.</p>
+                    <p className='text-justify my-8'>I am a Visual Merchandiser with over 10 years of experience in the retail sector. I have worked with a variety of brands, ranging from streetwear to high-end fashion. My expertise includes window displays, mannequins, and store layouts. Check my work below!</p>
                 </div>
 
                 <div>
