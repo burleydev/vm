@@ -13,7 +13,7 @@ const About = () => {
                 <div className='flex flex-col items-left'>
                     <img src={profile} className='rounded-md'></img>
                     <h3 className='mt-10 text-xl font-bold'>HI, I'M CARLOS</h3>
-                    <p className='xs:text-left sm:text-justify my-8'>I am a Visual Merchandiser with over 10 years of experience in the retail sector. I have worked with a variety of brands, ranging from streetwear to high-end fashion. My expertise includes window displays, mannequins, and store layouts. Check my work below!</p>
+                    <p className='xs:text-left sm:text-justify my-8'>I am a Visual Merchandiser with over 10 years of experience in the retail sector. I have worked with a variety of brands, ranging from streetwear to high-end fashion. My expertise includes window displays, mannequin styling, and store layouts. Check my work below!</p>
                 </div>
 
                 <div>
