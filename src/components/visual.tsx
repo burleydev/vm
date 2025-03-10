@@ -124,7 +124,7 @@ const Visual = () => {
 
       <div id='ugg' className='mb-32 lg:px-20'>
         <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>UGG</h2>
-        <h3 className='mb-10'>Showroom display at head office showcasing the new A/W 2025 collection.</h3>
+        <h3 className='mb-10 text-lg'>Showroom display at head office showcasing the new A/W 2025 collection.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={ugg4}
@@ -146,7 +146,7 @@ const Visual = () => {
 
       <div id='club' className='mb-32 lg:px-20'>
         <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>Club Monaco</h2>
-        <h3 className='mb-10'>Women's and men's collections showcased at the flagship store in Sloane Square.</h3>
+        <h3 className='mb-10 text-lg'>Women's and men's collections showcased at the flagship store in Sloane Square.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={club4}
@@ -168,7 +168,7 @@ const Visual = () => {
 
       <div id='weekday' className='mb-32 lg:px-20'>
         <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>Weekday</h2>
-        <h3 className='mb-10'>Window displays and store interiors at the Westfield Stratford store.</h3>
+        <h3 className='mb-10 text-lg'>Window displays and store interiors at the Westfield Stratford store.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={weekday4}
@@ -195,7 +195,7 @@ const Visual = () => {
 
       <div id='stories' className='mb-32 lg:px-20'>
         <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>& Other Stories</h2>
-        <h3 className='mb-10'>Window displays and store interiors at the Regent Street flagship.</h3>
+        <h3 className='mb-10 text-lg'>Window displays and store interiors at the Regent Street flagship.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={stories3}
