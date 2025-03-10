@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../index.css';
 
 import ugg1 from '../images/ugg/ugg1.jpg';
@@ -22,7 +22,10 @@ import stories4 from '../images/stories/stories4.jpg';
 const Visual = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  const [images, setImages] = useState<string[]>([]);
+  const [images, setImages] = useState([]);
+  const [touchStartX, setTouchStartX] = useState(null);
+  const [touchEndX, setTouchEndX] = useState(null);
+  const modalRef = useRef(null);
 
   const allImages = [
     ugg1, ugg3, ugg4,
@@ -32,7 +35,7 @@ const Visual = () => {
   ];
 
   // Open modal and set selected image
-  const openModal = (index: any) => {
+  const openModal = (index) => {
     setSelectedImageIndex(index);
     setIsModalOpen(true);
     setImages(allImages);
@@ -59,7 +62,7 @@ const Visual = () => {
 
   // Handle keyboard events
   useEffect(() => {
-    const handleKeyDown = (event: any) => {
+    const handleKeyDown = (event) => {
       if (isModalOpen) {
         if (event.key === 'ArrowLeft') {
           goToPrevious();
@@ -71,17 +74,53 @@ const Visual = () => {
       }
     };
 
-    // Add event listener for keydown
     window.addEventListener('keydown', handleKeyDown);
-
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [isModalOpen, selectedImageIndex]);
 
+  // Handle touch events for swipe gestures
+  useEffect(() => {
+    const handleTouchStart = (event) => {
+      setTouchStartX(event.touches[0].clientX);
+    };
+
+    const handleTouchMove = (event) => {
+      setTouchEndX(event.touches[0].clientX);
+    };
+
+    const handleTouchEnd = () => {
+      if (touchStartX !== null && touchEndX !== null) {
+        const deltaX = touchEndX - touchStartX;
+        if (deltaX > 50) {
+          goToPrevious();
+        } else if (deltaX < -50) {
+          goToNext();
+        }
+      }
+      setTouchStartX(null);
+      setTouchEndX(null);
+    };
+
+    const modalElement = modalRef.current;
+    if (isModalOpen && modalElement) {
+      modalElement.addEventListener('touchstart', handleTouchStart);
+      modalElement.addEventListener('touchmove', handleTouchMove);
+      modalElement.addEventListener('touchend', handleTouchEnd);
+    }
+
+    return () => {
+      if (modalElement) {
+        modalElement.removeEventListener('touchstart', handleTouchStart);
+        modalElement.removeEventListener('touchmove', handleTouchMove);
+        modalElement.removeEventListener('touchend', handleTouchEnd);
+      }
+    };
+  }, [isModalOpen]); // Only depend on isModalOpen
+
   // Handle click outside the image to close the modal
-  const handleOverlayClick = (event: any) => {
+  const handleOverlayClick = (event) => {
     if (event.target === event.currentTarget) {
       closeModal();
     }
@@ -94,13 +133,13 @@ const Visual = () => {
         <div
           className='fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50'
           onClick={handleOverlayClick}
-          // ref={modalRef}
+          ref={modalRef}
         >
           <div className='relative'>
             {/* Close button (×) */}
             <button
               onClick={closeModal}
-              className='absolute top-2 right-5 text-white text-4xl z-50 cursor-pointer'
+              className='absolute top-2 right-2 text-white text-4xl z-50'
             >
               &times;
             </button>
@@ -111,13 +150,13 @@ const Visual = () => {
             />
             <button
               onClick={goToPrevious}
-              className='absolute left-5 top-1/2 transform -translate-y-1/2 text-white text-2xl cursor-pointer'
+              className='absolute left-2 top-1/2 transform -translate-y-1/2 text-white text-2xl'
             >
               &#10094;
             </button>
             <button
               onClick={goToNext}
-              className='absolute right-5 top-1/2 transform -translate-y-1/2 text-white text-2xl cursor-pointer'
+              className='absolute right-2 top-1/2 transform -translate-y-1/2 text-white text-2xl'
             >
               &#10095;
             </button>
@@ -132,7 +171,7 @@ const Visual = () => {
 
       <div id='ugg' className='mb-32 lg:px-20'>
         <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>UGG</h2>
-        <h3 className='mb-10 text-lg'>Showroom display at head office showcasing the new A/W 2025 collection.</h3>
+        <h3 className='mb-10'>Showroom display at head office showcasing the new A/W 2025 collection.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={ugg4}
@@ -154,7 +193,7 @@ const Visual = () => {
 
       <div id='club' className='mb-32 lg:px-20'>
         <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>Club Monaco</h2>
-        <h3 className='mb-10 text-lg'>Women's and men's collections showcased at the flagship store in Sloane Square.</h3>
+        <h3 className='mb-10'>Women's and men's collections showcased at the flagship store in Sloane Square.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={club4}
@@ -176,7 +215,7 @@ const Visual = () => {
 
       <div id='weekday' className='mb-32 lg:px-20'>
         <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>Weekday</h2>
-        <h3 className='mb-10 text-lg'>Window displays and store interiors at the Westfield Stratford store.</h3>
+        <h3 className='mb-10'>Window displays and store interiors at the Westfield Stratford store.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={weekday4}
@@ -203,7 +242,7 @@ const Visual = () => {
 
       <div id='stories' className='mb-32 lg:px-20'>
         <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>& Other Stories</h2>
-        <h3 className='mb-10 text-lg'>Window displays and store interiors at the Regent Street flagship.</h3>
+        <h3 className='mb-10'>Window displays and store interiors at the Regent Street flagship.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={stories3}
