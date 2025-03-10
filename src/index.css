@@ -3,7 +3,7 @@
 
 @theme {
   --breakpoint-xs: 320px;
-  --color-brown: #bda37d;
+  --color-brown: #b87651;
 }
 
 
@@ -15,12 +15,8 @@ html {
 
 body {
   margin: 0;
-  /* display: flex;
-  place-items: center; */
   min-width: 320px;
   min-height: 100vh;
-  /* background: rgb(245,246,251);
-  background: linear-gradient(135deg, rgba(245,246,251,1) 0%, rgba(214,226,252,1) 100%); */
 }
 
 h1,
@@ -33,6 +29,3 @@ p {
   color: #262626;
 }
 
-/* .bg-colour {
-  background-color: #bda37d;
-} */
