@@ -6,7 +6,7 @@ const Home = () => {
       
       <div className='mt-[10%] mb-10'>
         <h1 className='font-bold tracking-wider lg:text-8xl md:text-7xl sm:text-6xl xs:text-5xl'>PORTFOLIO</h1>
-        <h2 className='font-bold mt-10 tracking-wider lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl'>VISUAL MERCHANDISER</h2>
+        <h2 className='font-bold mt-10 tracking-wider lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl'>VISUAL MERCHANDISING</h2>
       </div>
 
       <div className='mb-10'>
