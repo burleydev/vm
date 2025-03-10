@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'; // Import useRef
+import { useState, useEffect } from 'react';
 import '../index.css';
 
 import ugg1 from '../images/ugg/ugg1.jpg';
@@ -22,10 +22,7 @@ import stories4 from '../images/stories/stories4.jpg';
 const Visual = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  const [images, setImages] = useState([]);
-  const [touchStartX, setTouchStartX] = useState(null); // Track touch start position
-  const [touchEndX, setTouchEndX] = useState(null); // Track touch end position
-  const modalRef = useRef(null); // Ref for the modal container
+  const [images, setImages] = useState<string[]>([]);
 
   const allImages = [
     ugg1, ugg3, ugg4,
@@ -35,7 +32,7 @@ const Visual = () => {
   ];
 
   // Open modal and set selected image
-  const openModal = (index) => {
+  const openModal = (index: any) => {
     setSelectedImageIndex(index);
     setIsModalOpen(true);
     setImages(allImages);
@@ -62,7 +59,7 @@ const Visual = () => {
 
   // Handle keyboard events
   useEffect(() => {
-    const handleKeyDown = (event) => {
+    const handleKeyDown = (event: any) => {
       if (isModalOpen) {
         if (event.key === 'ArrowLeft') {
           goToPrevious();
@@ -74,56 +71,17 @@ const Visual = () => {
       }
     };
 
+    // Add event listener for keydown
     window.addEventListener('keydown', handleKeyDown);
+
+    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [isModalOpen, selectedImageIndex]);
 
-  // Handle touch events for swipe gestures
-  useEffect(() => {
-    const handleTouchStart = (event) => {
-      setTouchStartX(event.touches[0].clientX); // Record touch start position
-    };
-
-    const handleTouchMove = (event) => {
-      setTouchEndX(event.touches[0].clientX); // Record touch end position
-    };
-
-    const handleTouchEnd = () => {
-      if (touchStartX && touchEndX) {
-        const deltaX = touchEndX - touchStartX; // Calculate swipe distance
-        if (deltaX > 50) {
-          // Swipe right (go to previous image)
-          goToPrevious();
-        } else if (deltaX < -50) {
-          // Swipe left (go to next image)
-          goToNext();
-        }
-      }
-      // Reset touch positions
-      setTouchStartX(null);
-      setTouchEndX(null);
-    };
-
-    const modalElement = modalRef.current;
-    if (modalElement) {
-      modalElement.addEventListener('touchstart', handleTouchStart);
-      modalElement.addEventListener('touchmove', handleTouchMove);
-      modalElement.addEventListener('touchend', handleTouchEnd);
-    }
-
-    return () => {
-      if (modalElement) {
-        modalElement.removeEventListener('touchstart', handleTouchStart);
-        modalElement.removeEventListener('touchmove', handleTouchMove);
-        modalElement.removeEventListener('touchend', handleTouchEnd);
-      }
-    };
-  }, [touchStartX, touchEndX, isModalOpen]);
-
   // Handle click outside the image to close the modal
-  const handleOverlayClick = (event) => {
+  const handleOverlayClick = (event: any) => {
     if (event.target === event.currentTarget) {
       closeModal();
     }
@@ -135,8 +93,7 @@ const Visual = () => {
       {isModalOpen && (
         <div
           className='fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50'
-          onClick={handleOverlayClick}
-          ref={modalRef} // Attach ref to modal container
+          onClick={handleOverlayClick} // Close modal when clicking outside the image
         >
           <div className='relative'>
             <img
