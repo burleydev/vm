@@ -127,11 +127,11 @@ const Visual = () => {
 
       {/* Your existing content */}
       <div className=''>
-        <h1 className='sm:text-4xl xs:text-3xl font-bold pb-32'>VISUAL MERCHANDISING PROJECTS</h1>
+        <h1 className='text-3xl font-bold pb-32'>VISUAL MERCHANDISING PROJECTS</h1>
       </div>
 
       <div id='ugg' className='mb-32 lg:px-20'>
-        <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>UGG</h2>
+        <h2 className='text-2xl font-bold mb-2'>UGG</h2>
         <h3 className='mb-10 text-lg'>Showroom display at head office showcasing the new A/W 2025 collection.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
@@ -153,7 +153,7 @@ const Visual = () => {
       </div>
 
       <div id='club' className='mb-32 lg:px-20'>
-        <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>Club Monaco</h2>
+        <h2 className='text-2xl font-bold mb-2'>Club Monaco</h2>
         <h3 className='mb-10 text-lg'>Women's and men's collections showcased at the flagship store in Sloane Square.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
@@ -175,7 +175,7 @@ const Visual = () => {
       </div>
 
       <div id='weekday' className='mb-32 lg:px-20'>
-        <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>Weekday</h2>
+        <h2 className='text-2xl font-bold mb-2'>Weekday</h2>
         <h3 className='mb-10 text-lg'>Window displays and store interiors at the Westfield Stratford store.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
@@ -202,7 +202,7 @@ const Visual = () => {
       </div>
 
       <div id='stories' className='mb-32 lg:px-20'>
-        <h2 className='xs:text-2xl sm:text-3xl font-bold mb-2'>& Other Stories</h2>
+        <h2 className='text-2xl font-bold mb-2'>& Other Stories</h2>
         <h3 className='mb-10 text-lg'>Window displays and store interiors at the Regent Street flagship.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
