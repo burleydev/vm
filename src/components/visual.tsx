@@ -143,8 +143,8 @@ const Visual = () => {
 
       <div id='ugg' className='mb-32 lg:px-20'>
         <h2 className='text-2xl font-bold mb-2'>UGG</h2>
-        <h3 className='mb-10 text-lg'>Men's section at the Knightsbrighe flagship store.</h3>
-        <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
+        <h3 className='mb-10 text-lg'>Men's section at the Knightsbridge flagship store.</h3>
+        <div className=''>
           <img
             src={ugg1}
             className='rounded-md col-span-4 w-screen cursor-pointer'
@@ -163,9 +163,9 @@ const Visual = () => {
             className='rounded-md lg:col-span-2 xs:col-span-4 cursor-pointer'
             onClick={() => openModal(allImages.indexOf(ugg3))}
           />
-          </div>
-          <h3 className='mt-20 mb-10 text-lg'>Showroom display at head office showcasing the A/W 2025 collection.</h3>
-          <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
+        </div>
+        <h3 className='mt-20 mb-10 text-lg'>Showroom display at head office showcasing the A/W 2025 collection.</h3>
+        <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={ugg4}
             className='rounded-md lg:col-span-2 xs:col-span-4 cursor-pointer'
@@ -181,21 +181,27 @@ const Visual = () => {
 
       <div id='fred' className='mb-32 lg:px-20'>
         <h2 className='text-2xl font-bold mb-2'>Fred Perry</h2>
-        <h3 className='mb-10 text-lg'>Store interiors at the Shoreditch store.</h3>
-        <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
+        <h3 className='mb-10 text-lg'>Shoreditch store interiors showcasing Back Catalogue pieces.</h3>
+        <div className=''>
           <img
             src={fred1}
             className='rounded-md col-span-4 w-screen cursor-pointer'
             onClick={() => openModal(allImages.indexOf(fred1))}
           />
+        </div>
+        <h3 className='mt-20 mb-10 text-lg'>Store interiors featuring collaborations with Art Comes First and BEAMS.</h3>
+        <div className=''>
           <img
             src={fred2}
-            className='rounded-md lg:col-span-2 xs:col-span-4 xs:h-auto sm:h-full cursor-pointer'
+            className='rounded-md col-span-4 xs:h-auto sm:h-full cursor-pointer'
             onClick={() => openModal(allImages.indexOf(fred2))}
           />
+        </div>
+        <h3 className='mt-20 mb-10 text-lg'>Overview of the Raf Simons collaboration at the Shoreditch store.</h3>
+        <div className=''>
           <img
             src={fred3}
-            className='rounded-md lg:col-span-2 xs:col-span-4 cursor-pointer'
+            className='rounded-md col-span-4 cursor-pointer'
             onClick={() => openModal(allImages.indexOf(fred3))}
           />
         </div>
@@ -203,13 +209,16 @@ const Visual = () => {
 
       <div id='club' className='mb-32 lg:px-20'>
         <h2 className='text-2xl font-bold mb-2'>Club Monaco</h2>
-        <h3 className='mb-10 text-lg'>Women's and men's collections showcased at the flagship store in Sloane Square.</h3>
-        <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
+        <h3 className='mb-10 text-lg'>Window display at the Sloane Square flagship store.</h3>
+        <div className=''>
           <img
             src={club1}
             className='rounded-md col-span-4 w-screen cursor-pointer'
             onClick={() => openModal(allImages.indexOf(club1))}
           />
+        </div>
+        <h3 className='mt-20 mb-10 text-lg'>Flagship store interiors showcasing the Women's and Men's departments.</h3>
+        <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={club2}
             className='rounded-md lg:col-span-2 xs:col-span-4 cursor-pointer'
@@ -235,13 +244,16 @@ const Visual = () => {
 
       <div id='weekday' className='mb-32 lg:px-20'>
         <h2 className='text-2xl font-bold mb-2'>Weekday</h2>
-        <h3 className='mb-10 text-lg'>Window displays and store interiors at the Westfield Stratford store and Regent Street flagship.</h3>
-        <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
+        <h3 className='mb-10 text-lg'>Window display at the Westfield Stratford store.</h3>
+        <div className=''>
           <img
             src={weekday1}
             className='rounded-md col-span-4 w-screen cursor-pointer'
             onClick={() => openModal(allImages.indexOf(weekday1))}
           />
+          </div>
+          <h3 className='mt-20 mb-10 text-lg'>Regent Street flagship store interiors.</h3>
+          <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={weekday2}
             className='rounded-md lg:col-span-2 xs:col-span-4 cursor-pointer'
@@ -267,7 +279,7 @@ const Visual = () => {
 
       <div id='stories' className='mb-32 lg:px-20'>
         <h2 className='text-2xl font-bold mb-2'>& Other Stories</h2>
-        <h3 className='mb-10 text-lg'>Window displays and store interiors at the Regent Street flagship.</h3>
+        <h3 className='mb-10 text-lg'>Window display & apparel, accessories, and beauty departments at the Regent Street flagship.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={stories1}
