@@ -1,9 +1,9 @@
 import '../index.css';
-// import home from '../images/weekday/home.jpg';
+import home from '../images/weekday/home.jpg';
 
 const Home = () => {
   return (
-    <div className='h-screen flex flex-col text-center justify-evenly background'>
+    <div className='h-screen flex flex-col text-center justify-evenly bg-cover' style={{backgroundImage: `url(${home})`}}>
       
       <div className='mt-[10%] mb-10'>
         <h1 className='title font-bold tracking-wider lg:text-8xl md:text-7xl sm:text-6xl xs:text-5xl'>PORTFOLIO</h1>
