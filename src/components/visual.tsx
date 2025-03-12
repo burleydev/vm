@@ -254,12 +254,12 @@ const Visual = () => {
           />
           <img
             src={weekday4}
-            className='rounded-md col-span-2 xs:col-span-4 w-screen cursor-pointer'
+            className='rounded-md lg:col-span-2 xs:col-span-4 w-screen cursor-pointer'
             onClick={() => openModal(allImages.indexOf(weekday4))}
           />
           <img
             src={weekday5}
-            className='rounded-md col-span-2 xs:col-span-4 w-screen cursor-pointer'
+            className='rounded-md lg:col-span-2 xs:col-span-4 w-screen cursor-pointer'
             onClick={() => openModal(allImages.indexOf(weekday5))}
           />
         </div>
@@ -286,12 +286,12 @@ const Visual = () => {
           />
           <img
             src={stories4}
-            className='rounded-md col-span-2 xs:col-span-4 w-screen cursor-pointer'
+            className='rounded-md lg:col-span-2 xs:col-span-4 w-screen cursor-pointer'
             onClick={() => openModal(allImages.indexOf(stories4))}
           />
           <img
             src={stories5}
-            className='rounded-md col-span-2 xs:col-span-4 w-screen cursor-pointer'
+            className='rounded-md lg:col-span-2 xs:col-span-4 w-screen cursor-pointer'
             onClick={() => openModal(allImages.indexOf(stories5))}
           />
         </div>
