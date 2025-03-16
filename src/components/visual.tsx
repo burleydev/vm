@@ -111,7 +111,7 @@ const Visual = () => {
             {/* Close button (×) */}
             <button
               onClick={closeModal}
-              className='absolute top-2 right-5 text-white text-4xl z-50 cursor-pointer'
+              className='fixed top-2 right-5 text-white text-4xl z-50 cursor-pointer'
             >
               &times;
             </button>
@@ -122,13 +122,13 @@ const Visual = () => {
             />
             <button
               onClick={goToPrevious}
-              className='absolute left-5 top-1/2 transform -translate-y-1/2 text-white text-2xl cursor-pointer'
+              className='fixed left-5 top-1/2 transform -translate-y-1/2 text-white text-2xl cursor-pointer'
             >
               &#10094;
             </button>
             <button
               onClick={goToNext}
-              className='absolute right-5 top-1/2 transform -translate-y-1/2 text-white text-2xl cursor-pointer'
+              className='fixed right-5 top-1/2 transform -translate-y-1/2 text-white text-2xl cursor-pointer'
             >
               &#10095;
             </button>
