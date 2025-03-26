@@ -11,7 +11,7 @@ const About = () => {
 
             <div className='grid gap-18 lg:grid-cols-3 md:grid-cols-1'>
                 <div className='flex flex-col items-left'>
-                    <img src={profile} className='mx-auto rounded-md lg:w-[100%] sm:w-[50%] xs:w-[100%]'></img>
+                    <img src={profile} className='mx-auto rounded-md lg:w-[100%] sm:w-[80%] xs:w-[100%]'></img>
                     <h3 className='mt-10 text-xl font-bold'>HI, I'M CARLOS</h3>
                     <p className='text-lg xs:text-left sm:text-justify my-8'>I am a Visual Merchandiser with over 10 years of experience in the retail sector. I have worked with a variety of brands, ranging from streetwear to high-end fashion. My expertise includes window displays, mannequin styling, and store layouts. Check my work below!</p>
                 </div>
