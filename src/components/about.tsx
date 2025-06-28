@@ -33,8 +33,8 @@ const About = () => {
                         <div className='grid grid-cols-4 my-10 text-lg'>
                             <h2 className='font-bold xs:col-span-1 sm:col-span-2 col-span-1'>Email</h2>
                             <div className='w-full xs:col-span-3 sm:col-span-2 xs:text-right sm:text-left'>
-                                <a href='mailto:carlos.borrega@pm.me'>
-                                    carlos.borrega@pm.me
+                                <a href='mailto:cborrega0@gmail.com'>
+                                    cborrega0@gmail.com
                                 </a>
                             </div>
                         </div>
