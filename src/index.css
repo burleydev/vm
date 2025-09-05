@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -24,11 +25,15 @@ h3,
 h4,
 a,
 p {
-  font-family: "Outfit", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #262626;
 }
 
-.title{
+.white{
   color: white;
   /* text-shadow: 2px 2px 4px black */
+}
+
+.title1 {
+  font-family: "Playfair", sans-serif;
 }
