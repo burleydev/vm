@@ -122,13 +122,13 @@ const Visual = () => {
             />
             <button
               onClick={goToPrevious}
-              className='fixed left-5 top-1/2 transform -translate-y-1/2 text-white text-2xl cursor-pointer'
+              className='fixed left-5 top-1/2 transform -translate-y-1/2 text-white text-lg cursor-pointer'
             >
               &#10094;
             </button>
             <button
               onClick={goToNext}
-              className='fixed right-5 top-1/2 transform -translate-y-1/2 text-white text-2xl cursor-pointer'
+              className='fixed right-5 top-1/2 transform -translate-y-1/2 text-white text-lg cursor-pointer'
             >
               &#10095;
             </button>
@@ -138,12 +138,12 @@ const Visual = () => {
 
       {/* Your existing content */}
       <div className=''>
-        <h1 className='text-3xl font-bold pb-32'>VISUAL MERCHANDISING PROJECTS</h1>
+        <h1 className='text-2xl font-bold pb-32'>VISUAL MERCHANDISING PROJECTS</h1>
       </div>
 
       <div id='ugg' className='mb-32 lg:px-20'>
-        <h2 className='text-2xl font-bold mb-2'>UGG</h2>
-        <h3 className='mb-10 text-lg'>Men's section at the Knightsbridge flagship store.</h3>
+        <h2 className='text-lg font-bold mb-2'>UGG</h2>
+        <h3 className='mb-10 text-md'>Men's section at the Knightsbridge flagship store.</h3>
         <div className=''>
           <img
             src={ugg1}
@@ -151,7 +151,7 @@ const Visual = () => {
             onClick={() => openModal(allImages.indexOf(ugg1))}
           />
         </div>
-        <h3 className='mt-20 mb-10 text-lg'>Showroom display at head office featuring the S/S 2025 collection.</h3>
+        <h3 className='mt-20 mb-10 text-md'>Showroom display at head office featuring the S/S 2025 collection.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={ugg2}
@@ -164,7 +164,7 @@ const Visual = () => {
             onClick={() => openModal(allImages.indexOf(ugg3))}
           />
         </div>
-        <h3 className='mt-20 mb-10 text-lg'>Showroom display at head office showcasing the A/W 2025 collection.</h3>
+        <h3 className='mt-20 mb-10 text-md'>Showroom display at head office showcasing the A/W 2025 collection.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={ugg4}
@@ -180,8 +180,8 @@ const Visual = () => {
       </div>
 
       <div id='fred' className='mb-32 lg:px-20'>
-        <h2 className='text-2xl font-bold mb-2'>Fred Perry</h2>
-        <h3 className='mb-10 text-lg'>Shoreditch store interiors showcasing Back Catalogue pieces.</h3>
+        <h2 className='text-lg font-bold mb-2'>Fred Perry</h2>
+        <h3 className='mb-10 text-md'>Shoreditch store interiors showcasing Back Catalogue pieces.</h3>
         <div className=''>
           <img
             src={fred1}
@@ -189,7 +189,7 @@ const Visual = () => {
             onClick={() => openModal(allImages.indexOf(fred1))}
           />
         </div>
-        <h3 className='mt-20 mb-10 text-lg'>Store interiors featuring collaborations with Art Comes First and BEAMS.</h3>
+        <h3 className='mt-20 mb-10 text-md'>Store interiors featuring collaborations with Art Comes First and BEAMS.</h3>
         <div className=''>
           <img
             src={fred2}
@@ -197,7 +197,7 @@ const Visual = () => {
             onClick={() => openModal(allImages.indexOf(fred2))}
           />
         </div>
-        <h3 className='mt-20 mb-10 text-lg'>Overview of the Raf Simons collaboration at the Shoreditch store.</h3>
+        <h3 className='mt-20 mb-10 text-md'>Overview of the Raf Simons collaboration at the Shoreditch store.</h3>
         <div className=''>
           <img
             src={fred3}
@@ -208,8 +208,8 @@ const Visual = () => {
       </div>
 
       <div id='club' className='mb-32 lg:px-20'>
-        <h2 className='text-2xl font-bold mb-2'>Club Monaco</h2>
-        <h3 className='mb-10 text-lg'>Window display at the Sloane Square flagship store.</h3>
+        <h2 className='text-lg font-bold mb-2'>Club Monaco</h2>
+        <h3 className='mb-10 text-md'>Window display at the Sloane Square flagship store.</h3>
         <div className=''>
           <img
             src={club1}
@@ -217,7 +217,7 @@ const Visual = () => {
             onClick={() => openModal(allImages.indexOf(club1))}
           />
         </div>
-        <h3 className='mt-20 mb-10 text-lg'>Flagship store interiors showcasing the Women's and Men's departments.</h3>
+        <h3 className='mt-20 mb-10 text-md'>Flagship store interiors showcasing the Women's and Men's departments.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={club2}
@@ -243,8 +243,8 @@ const Visual = () => {
       </div>
 
       <div id='weekday' className='mb-32 lg:px-20'>
-        <h2 className='text-2xl font-bold mb-2'>Weekday</h2>
-        <h3 className='mb-10 text-lg'>Window display at the Westfield Stratford store.</h3>
+        <h2 className='text-lg font-bold mb-2'>Weekday</h2>
+        <h3 className='mb-10 text-md'>Window display at the Westfield Stratford store.</h3>
         <div className=''>
           <img
             src={weekday1}
@@ -252,7 +252,7 @@ const Visual = () => {
             onClick={() => openModal(allImages.indexOf(weekday1))}
           />
           </div>
-          <h3 className='mt-20 mb-10 text-lg'>Regent Street flagship store interiors.</h3>
+          <h3 className='mt-20 mb-10 text-md'>Regent Street flagship store interiors.</h3>
           <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={weekday2}
@@ -278,8 +278,8 @@ const Visual = () => {
       </div>
 
       <div id='stories' className='mb-32 lg:px-20'>
-        <h2 className='text-2xl font-bold mb-2'>& Other Stories</h2>
-        <h3 className='mb-10 text-lg'>Window display & apparel, accessories, and beauty departments at the Regent Street flagship.</h3>
+        <h2 className='text-lg font-bold mb-2'>& Other Stories</h2>
+        <h3 className='mb-10 text-md'>Window display & apparel, accessories, and beauty departments at the Regent Street flagship.</h3>
         <div className='grid grid-cols-4 gap-10 justify-items-center mx-auto'>
           <img
             src={stories1}
